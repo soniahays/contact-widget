@@ -1,0 +1,80 @@
+{
+    "contacts": [
+        {
+            "id": 0,
+            "firstName": "Sonia",
+            "lastName": "Brahms",
+            "jobTitle": "Web Developer",
+            "phoneNumber": "514-566-0999",
+            "picture": "moi.jpg"
+        },
+        {
+            "id": 1,
+            "firstName": "Paul",
+            "lastName": "Smith",
+            "jobTitle": "Baker",
+            "phoneNumber": "514-566-2923",
+            "picture": "paul.jpg"
+        },
+        {
+            "id": 2,
+            "firstName": "Frank",
+            "lastName": "Tao",
+            "jobTitle": "Tailor",
+            "phoneNumber": "514-569-2023",
+            "picture": "jake.jpeg"
+        },
+        {
+            "id": 3,
+            "firstName": "Georges",
+            "lastName": "Bobo",
+            "jobTitle": "Proud Father",
+            "phoneNumber": "514-506-0923",
+            "picture": "georges.jpg"
+        },
+        {
+            "id": 4,
+            "firstName": "Raoul",
+            "lastName": "Saba",
+            "jobTitle": "Javascript Guru",
+            "phoneNumber": "994-566-2923",
+            "picture": "rami.jpg"
+        },
+        {
+            "id": 5,
+            "firstName": "Henri",
+            "lastName": "Katola",
+            "jobTitle": "Professional Networker",
+            "phoneNumber": "664-569-6623",
+            "picture": ""
+        },
+        {
+            "id": 6,
+            "firstName": "Nadia",
+            "lastName": "Gigral",
+            "jobTitle": "Singer",
+            "phoneNumber": "777-506-0773",
+            "picture": "nadia.jpg"
+        },
+        {
+            "id": 7,
+            "firstName": "Fabrice",
+            "lastName": "Yunes",
+            "jobTitle": "CEO",
+            "phoneNumber": "999-566-2923",
+            "picture": ""
+        },
+        {
+            "id": 8,
+            "firstName": "Robert",
+            "lastName": "Tremblay",
+            "jobTitle": "Dentist",
+            "phoneNumber": "594-569-2993",
+            "picture": ""
+        }
+
+
+    ]
+
+
+}
