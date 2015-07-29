@@ -5,7 +5,6 @@ var express = require('express'),
 	app     = express(),
 	bodyParser = require('body-parser'),
 	errorHandler = require('errorhandler'),
-	hostname = process.env.HOSTNAME || 'localhost',
 	methodOverride = require('method-override'),
 	port    = parseInt(process.env.PORT, 10) || 8080,
 	publicDir = __dirname + '/public',
@@ -37,6 +36,6 @@ app.use(errorHandler({
 
 app.use(app.router);
 
-app.listen(port, hostname);
+app.listen(port);
 
 
