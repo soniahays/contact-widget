@@ -4,13 +4,13 @@ Demo: http://contact-widget.herokuapp.com/
 
 ## Before you begin
 
-* Make sure you have all dependencies installed.
+Make sure you have all dependencies installed.
 
-Install [NodeJS](http://nodejs.org/#download)
+* Install [NodeJS](http://nodejs.org/#download)
 
 ## Getting Started
 
-Browse to project folder
+* Browse to project folder
 
 * To generate the `index.html` page, type:
 
