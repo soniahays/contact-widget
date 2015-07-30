@@ -4,7 +4,7 @@ Demo: http://contact-widget.herokuapp.com/
 
 ## Before you begin
 
-*Make sure you have all dependencies installed.
+* Make sure you have all dependencies installed.
 
 Install [NodeJS](http://nodejs.org/#download)
 
@@ -18,5 +18,5 @@ Browse to project folder
   $ node server.js
   ```
 
-*Result can be seen at localhost 8080
+* Result can be seen at localhost 8080
 
