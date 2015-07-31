@@ -2,12 +2,16 @@
 
 var express = require('express'),
 	_ = require('underscore'),
-	app     = express(),
+    sassMiddleware = require('node-sass-middleware'),
+    path = require('path'),
+	app = express(),
 	bodyParser = require('body-parser'),
 	errorHandler = require('errorhandler'),
 	methodOverride = require('method-override'),
-	port    = parseInt(process.env.PORT, 10) || 8080,
+	port = parseInt(process.env.PORT, 10) || 8080,
 	publicDir = __dirname + '/public',
+    srcPath = publicDir + '/scss',
+    destPath = publicDir + '/generated_css',
 	contacts = require('./data/contacts.json');
 
 app.get('/', function(req, res) {
@@ -28,7 +32,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
+
+app.use(sassMiddleware({
+    src: srcPath,
+    dest: destPath,
+    debug: true,
+    outputStyle: 'compressed'
+}));
+
 app.use(express.static(publicDir));
+
 app.use(errorHandler({
 	dumpExceptions: true,
 	showStack: true

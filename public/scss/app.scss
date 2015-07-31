@@ -1,0 +1,186 @@
+html {
+  min-height: 100%;
+  max-width: 100%;
+  background: -webkit-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+  background:    -moz-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+  background:     -ms-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+  background:      -o-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+  background:         linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+}
+
+hr {
+  border-top: 1px dotted #eb5e66;
+  margin-right:150px;
+}
+
+.btn-custom-small {
+  background-color: #4f5b66;
+  color: #ffffff ;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  float:left;
+  margin: 10px;
+}
+
+.btn-custom {
+  width: 615px;
+  margin: 20px 0px;
+  height: 30px;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #666;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  color: #fff;
+  background-color: #d0c2b1;
+  border: 1px solid #eb5e66;
+  outline-color:#eb5e66;
+}
+
+input[type='search'] {
+  padding:0px 20px;
+  width: 313px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 30px;
+  display: inline;
+  background-color: #ebe7e8;
+  color:#333;
+}
+
+input[type='search']:focus {
+  outline:none;
+}
+
+label,
+input,
+textarea,
+.input-prefix,
+.input-suffix,
+select,
+input[type="radio"],
+input[type="checkbox"] {
+  line-height: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.panel-header,
+.alert,
+.h5,
+.panel-header-small,                                                                                       f
+.tab-item,
+.h6 {
+  font-weight: bold;
+  line-height: 1.2;
+  text-rendering: optimizelegibility;
+}
+
+h4,
+.h4,
+.panel-header,
+.alert {
+  font-size: 15px;
+}
+
+label {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/* Non-responsive overrides
+/* Reset the container */
+.container {
+  max-width: none !important;
+  width: 970px;
+  padding-right: 0;
+  padding-left: 0;
+}
+/*-----------------BODY------------*/
+/* Account for fixed navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.profile-picture {
+  width: 207px;
+  position: relative;
+  padding-bottom: 25px;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 20px !important;
+  overflow: hidden;
+  float: left;
+  z-index: 1000;
+}
+
+
+.top-profile-card-xedit > li {
+  float: left;
+}
+
+.top-profile-card-xedit {
+  clear: left;
+}
+
+.top-card-text-xedit {
+  padding: 4px;
+}
+.btn-valid-inline-xedit,
+.btn-cancel-inline-xedit {
+  border-radius: 2px;
+  color: #0073b2;
+  padding: 1px 8px;
+  margin: 0 0 0 3px;
+  height: 30px;
+}
+
+.pill-btn {
+  background: #fff;
+  border-radius: 4em;
+  border: 0.25em solid #eb5e66;
+  color: #eb5e66;
+  font-size: 18px;
+  /*left: 50%;*/
+  line-height: 1.5;
+  /*opacity: 0;*/
+  padding: .5em 2em .5em 1em;
+}
+
+.pill-btn:focus {
+  outline: none;
+}
+
+.pill-btn img {
+  border-radius: 50%;
+  width: 3em;
+}
