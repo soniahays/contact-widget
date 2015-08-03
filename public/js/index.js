@@ -1,7 +1,7 @@
-angular.module('lightSpeedSonia', [
+angular.module('lightspeedSonia', [
         'ngRoute',
         'xeditable',
-        'lightSpeedSonia.controllers'])
+        'lightspeedSonia.controllers'])
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/index.html', {
@@ -16,6 +16,6 @@ angular.module('lightSpeedSonia', [
         editableThemes['default'].submitTpl = '<button type="submit" style="float:right;"><i class="fa fa-check"></i></button>';
     }]);
 
-angular.module('lightSpeedSonia.controllers', []);
+angular.module('lightspeedSonia.controllers', []);
 
 

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('lightSpeedSonia.controllers')
+angular.module('lightspeedSonia.controllers')
     .controller('ListCtrl', ['$scope', '$http', '$filter', function ($scope, $http, $filter) {
         $scope.contacts = [];
         $scope.isEditMode = false;

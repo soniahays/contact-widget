@@ -1,6 +1,6 @@
 {
-	"name": "LightSpeedSonia",
-	"description": "Sonia's project for LightSpeed",
+	"name": "LightspeedSonia",
+	"description": "Sonia's project for Lightspeed technical interview(March 2014).",
 	"version": "0.0.0",
 	"engines": {
 		"node": "0.12.x",
