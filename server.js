@@ -11,7 +11,7 @@ var express = require('express'),
 	port = parseInt(process.env.PORT, 10) || 8080,
 	publicDir = __dirname + '/public',
 	srcPath = publicDir + '/scss',
-	destPath = publicDir + '/generated_css',
+	destPath = publicDir + '/generated_css/css',
 	contacts = require('./data/contacts.json');
 
 app.get('/', function(req, res) {

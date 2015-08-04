@@ -131,6 +131,55 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.contact-list-container {
+  max-width: 300px;
+  position: fixed;
+  left: 80%;
+}
+
+.scrollable {
+  height: 500px;
+//  margin: 0 auto;
+//  padding: 0;
+//  position: relative;
+//  overflow-y: hidden;
+//  text-align: center;
+}
+
+.items {
+  -webkit-animation: scroll 12s infinite;
+  -moz-animation: scroll 12s infinite;
+  -ms-animation: scroll 12s infinite;
+}
+
+@-webkit-keyframes scroll {
+  0%   { margin-top: 0; }
+  27.33%  { margin-top: 0 }
+  33.33%  { margin-top: -500px; }
+  60.66% { margin-top: -500px; }
+  66.66% { margin-top: -1000px; }
+  94.99% { margin-top: -1000px; }
+  100%  { margin-top: 0 }
+}
+@-moz-keyframes scroll {
+  0%   { margin-top: 0; }
+  27.33%  { margin-top: 0 }
+  33.33%  { margin-top: -500px; }
+  60.66% { margin-top: -500px; }
+  66.66% { margin-top: -1000px; }
+  94.99% { margin-top: -1000px; }
+  100%  { margin-top: 0 }
+}
+@-ms-keyframes scroll {
+  0%   { margin-top: 0; }
+  27.33%  { margin-top: 0 }
+  33.33%  { margin-top: -500px; }
+  60.66% { margin-top: -500px; }
+  66.66% { margin-top: -1000px; }
+  94.99% { margin-top: -1000px; }
+  100%  { margin-top: 0 }
+}
+
 .profile-picture {
     width: 207px;
     position: relative;
@@ -290,7 +339,10 @@ body {
     text-decoration: none;
 }
 
-/*folder*/
+/* ==========================================================================
+   Folder animated Icon
+   ========================================================================== */
+
 .folder-container {
     width: 400px;
     height: 400px;
@@ -301,14 +353,50 @@ body {
     margin-left: -200px;
 }
 
+$folder-height: 12.857em;
+$folder-width: 21.429em;
+$folder-outline: 1.071em;
+$folder-border-radius: 1.071em;
+
 .folder {
     position: absolute;
     left: 30px;
     top: 70px;
-    width: 21.429em;
+    width: $folder-width;
     height: 16.071em;
-    border: 1.071em solid black;
-    border-radius: 0 1.071em 1.071em;
+    border: $folder-outline solid black;
+    border-radius: 0 $folder-border-radius $folder-border-radius;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+    }
+
+
+    &:before {
+        top: -2.857em;
+        left: -1.071em;
+        width: 5.714em;
+        height: 2.857em;
+        border-radius: $folder-border-radius $folder-border-radius 0 0;
+        background-color: #F7F6F5;/*has to be parent background color*/
+        border: $folder-outline solid black;
+        border-bottom: 0;
+    }
+
+    &:after {
+      bottom: -$folder-outline;
+      width: $folder-width;
+      height: $folder-height;
+      border: $folder-outline solid black;
+      background-color: #ECE9E6;
+      border-radius: $folder-border-radius;
+
+      left: 0;
+      height: 16.071em;
+      transform: skewX(0deg);
+    }
 }
 
 .shadow {
@@ -325,28 +413,12 @@ body {
     -o-transition: all .5s ease-in-out;
 }
 
-.folder:before {
-    content: "";
-    position: absolute;
-    top: -2.857em;
-    left: -1.071em;
-    width: 5.714em;
-    height: 2.857em;
-    border-radius: 1.071em 1.071em 0 0;
-    background-color: #F7F6F5;/*has to be parent background color*/
-    border: 1.071em solid black;
-    border-bottom: 0;
-}
-
-.folder:after {
-    content: "";
-    position: absolute;
-    bottom: -1.071em;
+//currently triggered with js on hover.
+.folder-open:after {
     left: 8px;
-    width: 21.429em;
-    height: 12.857em;
-    border: 1.071em solid black;
-    background-color: #ECE9E6;
-    border-radius: 1.071em;
+    height: $folder-height;
     transform: skewX(-15deg);
 }
+
+
+
